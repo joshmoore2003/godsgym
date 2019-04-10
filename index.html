@@ -1,0 +1,167 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="UTF-8">
+	<title>God's Gym Project</title>
+
+	<link href="styles.css" rel="stylesheet" type="text/css">
+
+	<!-- Needed for mobile devices to not zoom out automatically-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+</head>
+
+<body>
+
+	<div id="page">
+
+		<header>
+			<section class="double">
+				<img src="images/Gods_Gym_Logo.png" alt="logo">
+			</section>
+
+			<div id="navigation">
+
+				<nav id="mobilenav">
+					<h2>Menu</h2>
+				</nav>
+
+				<nav id="mainnav">
+					<ul>
+						<li><a href="#">MEMBERSHIP</a></li>
+						<li><a href="#">FACILITIES</a></li>
+						<li><a href="#">VIRTUAL TOUR</a></li>
+						<li><a href="#">PERSONAL TRAINER</a></li>
+						<li><a href="#" class="last">CONNECT & SCHEDULE</a></li>
+					</ul>
+				</nav>
+			</div>
+		</header>
+		<section class="single">
+			<img src="images/Build_to_be_a_god_image.jpg" alt="Build To Be A God">
+		</section>
+		<section>
+
+			<!-- Mobile All About The Tools -->
+
+			<section class="container2">
+				<div class="column-right-muscle2">
+					<img src="images/virtual_tour_icon.png" alt="Virtual Tour">
+					<h2>VIRTUAL TOUR</h2>
+					<p>Want to know what kind of equipment gods use to train? Only the best professional brands are good enough
+						for us. Check out the virtual tour and see our amazing facilities in action. Not something mere mortals can
+						appreciate.</p>
+				</div>
+				<div class="column-right-muscle2">
+					<img src="images/social_features_icon.png" alt="All About The Tools">
+					<h2>SOCIAL FEAUTRES</h2>
+					<p>We know most people sign up for a membership and then don't go. That is why we have built the social tools
+						and apps for you to plan your goals and reach them. Connect with others for workouts and have fun attaining
+						perfection!</p>
+				</div>
+				<div class="column-right-muscle2">
+					<img src="images/trainer_icon.png" alt="All About The Tools">
+					<h2>PROFESSIONAL PERSONAL TRAINERS</h2>
+					<p class="last">Sometimes even gods need help. That is why we have a staff of personal trainers on hand to
+						help you learn how to use equipment most effectively and develop workouts to maximize your potential.
+						Schedule an appointment today!</p>
+				</div>
+			</section>
+
+			<!-- Desktop All About The Tools -->
+			<article>
+				<div class="column-left">
+					<img src="images/all_about_the_tools_image.jpg" alt="All About The Tools">
+				</div>
+			</article>
+			<div class="column-center">
+				<img src="images/virtual_tour_icon.png" alt="virtual tour" class="float-right-img">
+				<img src="images/social_features_icon.png" alt="social features" class="float-right-img">
+				<img src="images/trainer_icon.png" alt="Personal Trainer" class="float-right-img">
+			</div>
+			<div class="column-right">
+				<h2>VIRTUAL TOUR</h2>
+				<p>Want to know what kind of equipment gods use to train? Only the best professional brands are good enough for
+					us. Check out the virtual tour and see our amazing facilities in action. Not something mere mortals can
+					appreciate.</p>
+				<h2>SOCIAL FEAUTRES</h2>
+				<p>We know most people sign up for a membership and then don't go. That is why we have built the social tools
+					and apps for you to plan your goals and reach them. Connect with others for workouts and have fun attaining
+					perfection!</p>
+				<h2>PROFESSIONAL PERSONAL TRAINERS</h2>
+				<p class="last">Sometimes even gods need help. That is why we have a staff of personal trainers on hand to help
+					you learn how to use equipment most effectively and develop workouts to maximize your potential. Schedule an
+					appointment today!</p>
+			</div>
+		</section>
+		<section>
+			<article>
+				<div>
+					<h1 class="contact-the-club">CONTACT THE CLUB FOR <span class="bold">A TOUR</span> AND A <span
+							class="bold">FREE WORKOUT</span> <a href="#" id="button">
+							CONTACT US TODAY</a></h1>
+				</div>
+			</article>
+		</section>
+		<section class="container">
+			<article>
+				<div class="column-left">
+					<img src="images/muscle_milk_image.jpg" alt="All About The Tools">
+				</div>
+			</article>
+			<div class="column-right-muscle">
+				<img src="images/muscle_milk_logo.jpg" alt="All About The Tools">
+				<p>Together, with our partner Muscle Milk, we are changing lives every day of every week. Check our <a
+						href="">calendar of events</a> to see what is happening this week.</p>
+				<h2>SOCIAL FEAUTRES</h2>
+				<p>Worn out after your workout? <a href="#">Visit God's Spa</a> for a message and some pampering worthy of a
+					god.</p>
+			</div>
+		</section>
+		<section class="container">
+			<article>
+				<div class="column-left-footer">
+					<img src="images/Gods_Gym_Logo.png" alt="All About The Tools">
+				</div>
+			</article>
+			<div class="column-center-footer">
+				<h2>God's Gym</h2>
+				<p>123 Somewhere Street,<br>Sacramento, CA 95818<br>916.333.4444</p>
+			</div>
+			<div class="column-right-footer">
+				<p>info@godsgym.com<br>Open everyday from 5am to 11pm<br>Copyright © 2014<br>Terms of service</p>
+			</div>
+		</section>
+	</div>
+</body>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="js/dropdownmenu.js"></script>
+<!-- <script type="text/javascript">
+	var mywidth = $('.single').width();
+	$('.flip-container').css('height', mywidth + 'px');
+	$('.back').css('height', mywidth + 'px');
+	$('.front').css('height', mywidth + 'px');
+
+	$(window).resize(function () {
+		var mywidth = $('.double').width();
+		$('.flip-container').css('height', mywidth + 'px');
+		$('.back').css('height', mywidth + 'px');
+		$('.front').css('height', mywidth + 'px');
+
+		var viewportWidth = $(window).width();
+		if (viewportWidth > 960) {
+			$('#mainnav').show();
+		}
+		else {
+			$('#mainnav').hide();
+		}
+	});
+
+	$('#mobilenav h2').click(function () {
+		$('#mainnav').slideToggle('slow');
+	});
+
+</script> -->
+
+</html>
